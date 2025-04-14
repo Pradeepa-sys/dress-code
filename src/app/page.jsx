@@ -1,13 +1,13 @@
 "use client";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
-import Banner from "../../../public/assets/images/mainpage/banner.png";
+import Banner from "../../public/assets/images/mainpage/banner.png";
 import Image from "next/image";
 import "@splidejs/react-splide/css";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
-import { Sidemenu } from "./footer/carddata";
-import SideMenu from "../components/SideMenu/page.jsx";
+import { Sidemenu } from "./components/footer/carddata.js";
+import SideMenu from "./components/SideMenu/page.jsx";
 
-import Flashsales from "./Flashsales/Flashsales.jsx";
+import Flashsales from "./components/Flashsales/Flashsales.jsx";
 
 export default function Home() {
   return (

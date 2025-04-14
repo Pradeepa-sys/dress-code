@@ -3,7 +3,7 @@
 export default function Footercard({data,title}){
     
     return(
-        <div>
+        <div className="text-white">
             <h1 className="h-10 text-xl">{title}</h1>
             <ul >
                {

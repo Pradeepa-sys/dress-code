@@ -6,30 +6,54 @@ import { cardlist } from "../footer/carddata";
 
 export default function Flashsales() {
   return (
-    <div className="pl-40 text-black">
-      <div className="flex py-5">
+    <div className="flex justify-center items-center flex-col px-40">
+      <div className="flex py-5 self-start">
         <p className="h-8 w-4 bg-red-600 border rounded-sm"></p>
         <p className="pl-3 pt-1 text-red-600"> Today's</p>
       </div>
-      <div className="flex justify-between relative">
-        <div className="flex gap-20 text-3xl">
-          <h1 className="text-black text-3xl font-medium">Flash Sales </h1>
-          <p>03 : 23 : 19 :56</p>
-        </div>
-        <div className="w-40">
-          <div className="splide__arrows absolute top-4">
-            <button className="splide__arrow splide__arrow--prev">
-              <Image src={right} />
-            </button>
-            <button className="splide__arrow splide__arrow--next">
-              <Image src={left} />
-            </button>
+      <div className="self-start flex justify-between  w-full">
+        <div className="flex justify-between ">
+          <div className="flex gap-20 text-xl">
+            <h1 className="text-black text-xl font-medium">Flash Sales </h1>
+            <div className=" flex gap-3">
+            <div className="">
+              <div className="text-xs">Days</div>
+              <div className="text-xl font-bold">03 </div>
+            </div>
+            <span className="text-[#DB4444] self-end">:</span>
+            <div className="">
+              <div className="text-xs">hour</div>
+              <div className="text-lg font-bold">03</div>
+            </div>
+            <span className="text-[#DB4444] self-end">:</span>
+            <div className="">
+              <div className="text-xs">minutes</div>
+              <div className="text-lg font-bold">03</div>
+            </div>
+            <span className="text-[#DB4444] self-end">:</span>
+            <div className="">
+              <div className="text-xs">secound</div>
+              <div className="text-lg font-bold">03</div>
+            </div>
+
+            </div>
+          
           </div>
         </div>
+        <div className="">
+        
+          <button className="">
+            <Image src={left} />
+          </button>
+          <button className="">
+            <Image src={right} />
+          </button>
+        </div>
       </div>
-      <div className=" flex gap-2">
-        {data?.map(() => {
-          return <Card data={cardlist} />;
+
+      <div className=" flex gap-2 my-2">
+        {cardlist.map((data, i) => {
+          return <Card item={data} index={i + "card"} />;
         })}
       </div>
     </div>
