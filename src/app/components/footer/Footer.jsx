@@ -40,15 +40,15 @@ export default function Footer() {
         <div className="flex py-5 ">
           <Image src={Qrcode} width={75} alt="Picture of the author" />
           <div className="flex flex-col py-6">
-            <Image src={gpay} width={70} alt="Picture of the author" />
-            <Image src={app} width={70} alt="Picture of the author" />
+            <Image src={gpay} width={100} alt="Picture of the author" />
+            <Image src={app} width={100} alt="Picture of the author" />
           </div>
         </div>
         <div className="flex gap-4 ">
-          <Image src={facebook} width={20} alt="Picture of the author" />
-          <Image src={instagram} width={20} alt="Picture of the author" />
-          <Image src={twitter} width={20} alt="Picture of the author" />
-          <Image src={linkedin} width={20} alt="Picture of the author" />
+          <Image src={facebook} width={30} alt="Picture of the author" />
+          <Image src={instagram} width={30} alt="Picture of the author" />
+          <Image src={twitter} width={30} alt="Picture of the author" />
+          <Image src={linkedin} width={30} alt="Picture of the author" />
         </div>
       </div>
     </div>
