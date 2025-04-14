@@ -24,7 +24,7 @@ export default function Header() {
           </div>
         </div>
       </div>
-      <div className="bg-white h-22 boreder border-b-4 border-black flex justify-around text-black items-center">
+      <div className="bg-white h-22 boreder border-b-1 border-gray-300 flex justify-around text-black items-center">
         <h2 className="py-10 text-2xl font-semibold">Exclusive</h2>
         <div className="py-10 flex gap-14 text-xl ">
           <a href="#">Home</a>

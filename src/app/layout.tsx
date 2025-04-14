@@ -36,7 +36,7 @@ export default function RootLayout({
         className={popins.className}
       >
       <Header/>
-      <div className=" h-[100vh]">
+      <div>
       {children}
       </div>
       
