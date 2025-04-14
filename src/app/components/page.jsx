@@ -6,7 +6,8 @@ import "@splidejs/react-splide/css";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import { Sidemenu } from "./footer/carddata";
 import SideMenu from "../components/SideMenu/page.jsx";
-import Card from "../components/Flashsales/Card.jsx";
+
+import Flashsales from "./Flashsales/Flashsales.jsx";
 
 export default function Home() {
   return (
@@ -21,26 +22,26 @@ export default function Home() {
         <div className="w-[75%] h-[50%] pt-10">
           <Splide
             aria-label="My Favorite Images"
-            options={
-              {
-                // type: 'loop',
-                // rewind:true,
-                // autoplay: false,
-                // perMove: 1,
-                // pagination: true,
-                // autoScroll: {
-                //     pauseOnHover: true,
-                //     pauseOnFocus: false,
-                //     speed: 1
-                // },
-              }
-            }
-            // extensions={{ AutoScroll }}
+            options={{
+              // type: 'loop',
+              // rewind:true,
+              // autoplay: false,
+              // perMove: 1,
+              // pagination: true,
+              // autoScroll: {
+              //     pauseOnHover: true,
+              //     pauseOnFocus: false,
+              //     speed: 1
+              // },
+              nextClass: "",
+            }}
+            // extensions={{ AutoScroll}}
           >
-            {[1, 2, 3].map((e) => {
+            {[1, 2, 3].map((e,i) => {
               return (
-                <SplideSlide>
+                <SplideSlide key={i}>
                   <Image
+                    //key={e}
                     src={Banner}
                     alt="Picture of the author"
                     className="h-[99%] w-full"
@@ -51,7 +52,7 @@ export default function Home() {
           </Splide>
         </div>
       </div>
-      <Card />
+      <Flashsales />
     </div>
   );
 }

@@ -65,3 +65,37 @@ export const Sidemenu = [
     name: "Health & Beauty",
   },
 ];
+
+export const cardlist = [
+  {
+    name: "HAVIT HV-G92 Gamepad",
+    rate: "$960",
+    op: "$1160",
+    rating: "(75)",
+    img:"url"
+  },
+  {
+    name: "IPS LCD Gaming Monitor",
+    rate: "$370",
+    op: "$400",
+    rating: "(75)",
+  },
+  {
+    name: "S-Series Comfort Chair",
+    rate: "$375",
+    op: "$400",
+    rating: "(99)",
+  },
+  {
+    name: "S-Series Comfort Chair",
+    rate: "$375",
+    op: "$400",
+    rating: "(99)",
+  },
+  {
+    name: "S-Series Comfort Chair",
+    rate: "$375",
+    op: "$400",
+    rating: "(99)",
+  },
+];
