@@ -5,37 +5,59 @@ import jwt from 'jsonwebtoken';
 
 
 
-// sign up
- export const SignUp = async (req,res) => {
-    const {name,email,password,mobileNumber} = req.body;
+export const SignUp = async (req, res) => {
+    const { userName, email, mobileNumber, password } = req.body;
 
-    try{
-        const existingUser  = await userModel.findOne({
-            $or:[{email},{mobileNumber}]
-        })
+    if (!userName || !password || (!email && !mobileNumber)) {
+        return res.status(400).json({
+            success: false,
+            message: "Name, password, and either email or mobile number are required."
+        });
+    }
 
-        if(existingUser){
-            return res.status(500).json({message:"User already register"})
+    try {
+        // Build dynamic query for existing user
+        const query = [];
+        if (email) query.push({ email });
+        if (mobileNumber) query.push({ mobileNumber });
+
+        const existingUser = await userModel.findOne({
+            $or: query
+        });
+
+        if (existingUser) {
+            return res.status(409).json({
+                success: false,
+                message: "User already registered"
+            });
         }
 
-        const hashPassword = await hash(password,10);
+        const hashedPassword = await hash(password, 10);
 
         const user = new userModel({
-            name,
-            email,
+            userName,
+            email: email || '', // fallback if undefined
             mobileNumber,
-            password:hashPassword,
+            password: hashedPassword
+        });
 
-        })
+        await user.save();
 
-        await user.save()
+        return res.status(201).json({
+            success: true,
+            message: "User registered successfully",
+            user: {
+                id: user._id,
+                userName: user.userName,
+                email: user.email,
+                mobileNumber: user.mobileNumber
+            }
+        });
 
-    }
-    catch{
+    } catch (error) {
         return res.status(500).json({
-            success:false,
-            message:error.message
-        })
+            success: false,
+            message: error.message
+        });
     }
-
-}
+};
