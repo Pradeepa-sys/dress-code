@@ -8,6 +8,7 @@ const userSchema = new mongoose.Schema({
     email: {
         type: String,
         unique: true,
+        required:false,
         sparse: true
     },
     password: {
@@ -31,7 +32,8 @@ const userSchema = new mongoose.Schema({
     mobileNumber: {
         type: String,
         unique: true,
-        sparse: true
+        sparse: true,
+        required:true
     },
     verifyOTP: {
         type: String,
@@ -89,14 +91,6 @@ const userSchema = new mongoose.Schema({
     timestamps: true
 });
 
-// Custom validator: Require either email or mobileNumber
-userSchema.pre('validate', function (next) {
-    if (!this.email && !this.mobileNumber) {
-        this.invalidate('email', 'Either email or mobile number is required.');
-        this.invalidate('mobileNumber', 'Either mobile number or email is required.');
-    }
-    next();
-});
 
 
 

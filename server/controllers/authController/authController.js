@@ -16,7 +16,7 @@ export const SignUp = async (req, res) => {
     }
 
     try {
-        // Build dynamic query for existing user
+        // Build query only with defined fields
         const query = [];
         if (email) query.push({ email });
         if (mobileNumber) query.push({ mobileNumber });
@@ -28,7 +28,7 @@ export const SignUp = async (req, res) => {
         if (existingUser) {
             return res.status(409).json({
                 success: false,
-                message: "User already registered"
+                message: "User already registered with same email or mobile number"
             });
         }
 
@@ -36,8 +36,8 @@ export const SignUp = async (req, res) => {
 
         const user = new userModel({
             userName,
-            email: email || '', // fallback if undefined
-            mobileNumber,
+            email: email || '', // fallback if not given
+            mobileNumber: mobileNumber || '',
             password: hashedPassword
         });
 
@@ -61,3 +61,4 @@ export const SignUp = async (req, res) => {
         });
     }
 };
+
