@@ -78,6 +78,7 @@ export const cardlist = [
     rate: "$960",
     op: "$1160",
     rating: 100,
+    ratingCount:"(75)",
     imageUrl: ("assets/images/mainpage/Gamepad-Cart-Small.png"),
     discount:"10"
   },
@@ -85,7 +86,7 @@ export const cardlist = [
     name: "IPS LCD Gaming Monitor",
     rate: "$370",
     op: "$400",
-    ratingCount:75,
+    ratingCount:"(99)",
     rating:2.5,
     imageUrl: ("/assets/images/mainpage/Monitor-Cart-Small.png"),
     discount:"8"
@@ -95,7 +96,7 @@ export const cardlist = [
     name: "S-Series Comfort Chair",
     rate: "$375",
     op: "$400",
-   ratingCount:26,
+   ratingCount:"(26)",
    rating:5,
     imageUrl: ("/assets/images/mainpage/chair.png"),
     discount:"57"
@@ -105,7 +106,7 @@ export const cardlist = [
     name: "S-Series Comfort Chair",
     rate: "$375",
     op: "$400",
-   ratingCount:25,
+   ratingCount:"(25)",
    rating:3,
     imageUrl: ("/assets/images/mainpage/chair.png"),
     discount:"35"

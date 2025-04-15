@@ -36,11 +36,11 @@ export default function RootLayout({
         className={popins.className}
       >
       <Header/>
-      <div>
+      <div >
       {children}
       </div>
       
-       {/* <Footer/> */}
+       <Footer/>
       </body>
     </html>
   );

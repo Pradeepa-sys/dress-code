@@ -11,7 +11,7 @@ import Flashsales from "./components/Flashsales/Flashsales.jsx";
 
 export default function Home() {
   return (
-    <div className="h-[100vh] bg-white">
+    <div className=" bg-white">
       <div className="flex px-40 gap-20 ">
         <div className="w-[18%] py-10  border-gray-300 border-r-1 border-0">
           <SideMenu data={Sidemenu} />
