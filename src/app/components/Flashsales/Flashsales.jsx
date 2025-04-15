@@ -2,10 +2,12 @@ import Image from "next/image";
 import right from "../../../../public/assets/icon/rightarrow.png";
 import left from "../../../../public/assets/icon/leftarrow.png";
 import Card from "../../components/Flashsales/Card.jsx";
-import { cardlist } from "../footer/carddata";
 import Button from "../../components/Button.jsx";
+import { cardlist } from "../footer/carddata";
 
 export default function Flashsales() {
+
+
   return (
     <div className="flex justify-center items-center flex-col px-40 ">
       <div className="flex py-5 self-start">
@@ -50,8 +52,8 @@ export default function Flashsales() {
       </div>
 
       <div className=" flex gap-2 my-2 ">
-        {cardlist.map((data, i) => {
-          return <Card item={data} index={i + "card"} />;
+        {cardlist?.map((data, i) => {
+          return <Card item={data} key={i}  />;
         })}
       </div>
       <Button>View All Products</Button>

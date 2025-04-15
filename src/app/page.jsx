@@ -6,9 +6,8 @@ import "@splidejs/react-splide/css";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import { Sidemenu } from "./components/footer/carddata.js";
 import SideMenu from "./components/SideMenu/page.jsx";
-import Categories from "./components/Categories/Category.jsx";
-
 import Flashsales from "./components/Flashsales/Flashsales.jsx";
+import Category from "./components/Categories/Category.jsx";
 
 export default function Home() {
   return (
@@ -54,7 +53,7 @@ export default function Home() {
         </div>
       </div>
       <Flashsales />
-      <Categories/>
+      <Category/>
     </div>
   );
 }

@@ -8,11 +8,11 @@ export default function Card({ item, index }) {
   return (
     <div
       key={index}
-      className="m-6  bg-gray-100 w-auto h-[330px] relative rounded-lg group " 
+      className="m-6  bg-gray-100 w-auto h-[330px] relative rounded-lg group "
     >
       <div className="bg-gray-100 w-auto h-[200px] ">
         <div
-          className="h-[150px] w-[300px] mt-10"
+          className="h-[150px] w-[300px] mt-10 "
           style={{
             backgroundImage: `url(${item.imageUrl})`,
             backgroundRepeat: "no-repeat",
