@@ -1,8 +1,7 @@
-import chairImage from '../../../../public/assets/images/mainpage/chair.png';
-import gamepad from "../../../../public/assets/images/mainpage/Gamepad-Cart-Small.png"
-import keyboard from "../../../../public/assets/images/mainpage/Keyboard-Cart-Small.png"
-import Monitor from "../../../../public/assets/images/mainpage/Monitor-Cart-Small.png"
-
+import chairImage from "../../../../public/assets/images/mainpage/chair.png";
+import gamepad from "../../../../public/assets/images/mainpage/Gamepad-Cart-Small.png";
+import keyboard from "../../../../public/assets/images/mainpage/Keyboard-Cart-Small.png";
+import Monitor from "../../../../public/assets/images/mainpage/Monitor-Cart-Small.png";
 
 export const Support = [
   {
@@ -78,47 +77,74 @@ export const cardlist = [
     rate: "$960",
     op: "$1160",
     rating: 100,
-    ratingCount:"(75)",
-    imageUrl: ("assets/images/mainpage/Gamepad-Cart-Small.png"),
-    discount:"10"
+    ratingCount: "(75)",
+    imageUrl: "assets/images/mainpage/Gamepad-Cart-Small.png",
+    discount: "10",
   },
   {
     name: "IPS LCD Gaming Monitor",
     rate: "$370",
     op: "$400",
-    ratingCount:"(99)",
-    rating:2.5,
-    imageUrl: ("/assets/images/mainpage/Monitor-Cart-Small.png"),
-    discount:"8"
+    ratingCount: "(99)",
+    rating: 2.5,
+    imageUrl: "/assets/images/mainpage/Monitor-Cart-Small.png",
+    discount: "8",
+  },
+  {
+    name: "S-Series Comfort Chair",
+    rate: "$375",
+    op: "$400",
+    ratingCount: "(26)",
+    rating: 5,
+    imageUrl: "/assets/images/mainpage/chair.png",
+    discount: "57",
+  },
 
-  },
   {
     name: "S-Series Comfort Chair",
     rate: "$375",
     op: "$400",
-   ratingCount:"(26)",
-   rating:5,
-    imageUrl: ("/assets/images/mainpage/chair.png"),
-    discount:"57"
-  },
- 
-  {
-    name: "S-Series Comfort Chair",
-    rate: "$375",
-    op: "$400",
-   ratingCount:"(25)",
-   rating:3,
-    imageUrl: ("/assets/images/mainpage/chair.png"),
-    discount:"35"
+    ratingCount: "(25)",
+    rating: 3,
+    imageUrl: "/assets/images/mainpage/chair.png",
+    discount: "35",
   },
   {
     name: "HAVIT HV-G92 Gamepad",
     rate: "$960",
     op: "$1160",
     rating: 100,
-    ratingCount:"(75)",
-    imageUrl: ("assets/images/mainpage/Gamepad-Cart-Small.png"),
-    discount:"10"
+    ratingCount: "(75)",
+    imageUrl: "assets/images/mainpage/Gamepad-Cart-Small.png",
+    discount: "10",
+  },
+   {
+    name: "S-Series Comfort Chair",
+    rate: "$375",
+    op: "$400",
+    ratingCount: "(26)",
+    rating: 5,
+    imageUrl: "/assets/images/mainpage/chair.png",
+    discount: "57",
+  },
+
+  {
+    name: "S-Series Comfort Chair",
+    rate: "$375",
+    op: "$400",
+    ratingCount: "(25)",
+    rating: 3,
+    imageUrl: "/assets/images/mainpage/chair.png",
+    discount: "35",
+  },
+  {
+    name: "HAVIT HV-G92 Gamepad",
+    rate: "$960",
+    op: "$1160",
+    rating: 100,
+    ratingCount: "(75)",
+    imageUrl: "assets/images/mainpage/Gamepad-Cart-Small.png",
+    discount: "10",
   },
   // {
   //   name: "IPS LCD Gaming Monitor",
@@ -130,29 +156,77 @@ export const cardlist = [
   //   discount:"8"
 
   // },
-
 ];
 
 export const categories = [
   {
     imageUrl: "assets/icon/Category-CellPhone.svg",
-    name: "Phones"
+    name: "Phones",
   },
   {
     imageUrl: "assets/icon/Category-Computer.svg",
-    name: "Computers"
+    name: "Computers",
   },
   {
     imageUrl: "assets/icon/Category-Gamepad.svg",
-    name: "Gaming"
+    name: "Gaming",
   },
   {
     imageUrl: "assets/icon/Category-Headphone.svg",
-    name: "Headphones"
+    name: "Headphones",
   },
   {
     imageUrl: "assets/icon/Category-SmartWatch.svg",
-    name: "SmartWatch"
-  }
+    name: "SmartWatch",
+  },
 ];
 
+
+export const month = [
+  {
+    name: "The north coat",
+    rate: "$960",
+    op: "$1160",
+    rating: 100,
+    ratingCount: "(75)",
+    imageUrl: "assets/images/mainpage/Gamepad-Cart-Small.png",
+   
+  },
+  {
+    name: "Gucci duffle bag",
+    rate: "$860",
+    op: "$1160",
+    ratingCount: "(99)",
+    rating: 2.5,
+    imageUrl: "/assets/images/mainpage/Monitor-Cart-Small.png",
+    
+  },
+  {
+    name: "RGB liquid CPU Cooler",
+    rate: "$160",
+    op: "$170",
+    ratingCount: "(26)",
+    rating: 5,
+    imageUrl: "/assets/images/mainpage/chair.png",
+   
+  },
+
+  {
+    name: "Small Book Self",
+    rate: "$360",
+    op: "$400",
+    ratingCount: "(25)",
+    rating: 3,
+    imageUrl: "/assets/images/mainpage/chair.png",
+   
+  },
+  {
+    name: "HAVIT HV-G92 Gamepad",
+    rate: "$960",
+    op: "$1160",
+    rating: 100,
+    ratingCount: "(75)",
+    imageUrl: "assets/images/mainpage/Gamepad-Cart-Small.png",
+    
+  },
+];

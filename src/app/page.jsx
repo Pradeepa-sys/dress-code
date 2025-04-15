@@ -3,11 +3,13 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import Banner from "../../public/assets/images/mainpage/banner.png";
 import Image from "next/image";
 import "@splidejs/react-splide/css";
+// import "@splidejs/react-splide/css/skyblue";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import { Sidemenu } from "./components/footer/carddata.js";
 import SideMenu from "./components/SideMenu/page.jsx";
 import Flashsales from "./components/Flashsales/Flashsales.jsx";
 import Category from "./components/Categories/Category.jsx";
+import Bestselling from "./components/Bestselling/Bestselling.jsx";
 
 export default function Home() {
   return (
@@ -54,6 +56,7 @@ export default function Home() {
       </div>
       <Flashsales />
       <Category/>
+      <Bestselling/>
     </div>
   );
 }
