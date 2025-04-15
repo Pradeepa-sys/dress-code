@@ -6,6 +6,7 @@ import "@splidejs/react-splide/css";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import { Sidemenu } from "./components/footer/carddata.js";
 import SideMenu from "./components/SideMenu/page.jsx";
+import Categories from "./components/Categories/Category.jsx";
 
 import Flashsales from "./components/Flashsales/Flashsales.jsx";
 
@@ -24,7 +25,7 @@ export default function Home() {
             aria-label="My Favorite Images"
             options={{
               // type: 'loop',
-              // rewind:true,
+              rewind:true,
               // autoplay: false,
               // perMove: 1,
               // pagination: true,
@@ -53,6 +54,7 @@ export default function Home() {
         </div>
       </div>
       <Flashsales />
+      <Categories/>
     </div>
   );
 }

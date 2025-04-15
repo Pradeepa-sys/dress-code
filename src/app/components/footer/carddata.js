@@ -111,4 +111,24 @@ export const cardlist = [
     imageUrl: ("/assets/images/mainpage/chair.png"),
     discount:"35"
   },
+  {
+    name: "HAVIT HV-G92 Gamepad",
+    rate: "$960",
+    op: "$1160",
+    rating: 100,
+    ratingCount:"(75)",
+    imageUrl: ("assets/images/mainpage/Gamepad-Cart-Small.png"),
+    discount:"10"
+  },
+  // {
+  //   name: "IPS LCD Gaming Monitor",
+  //   rate: "$370",
+  //   op: "$400",
+  //   ratingCount:"(99)",
+  //   rating:2.5,
+  //   imageUrl: ("/assets/images/mainpage/Monitor-Cart-Small.png"),
+  //   discount:"8"
+
+  // },
+
 ];

@@ -3,6 +3,7 @@ import right from "../../../../public/assets/icon/rightarrow.png";
 import left from "../../../../public/assets/icon/leftarrow.png";
 import Card from "../../components/Flashsales/Card.jsx";
 import { cardlist } from "../footer/carddata";
+import Button from "../../components/Button.jsx";
 
 export default function Flashsales() {
   return (
@@ -16,28 +17,26 @@ export default function Flashsales() {
           <div className="flex gap-20 text-xl ">
             <h1 className="text-black text-3xl font-medium">Flash Sales </h1>
             <div className=" flex gap-3 text-black items-center">
-            <div className="">
-              <div className="text-sm">Days</div>
-              <div className="text-2xl font-bold">03 </div>
+              <div className="">
+                <div className="text-sm">Days</div>
+                <div className="text-2xl font-bold">03 </div>
+              </div>
+              <span className="text-[#DB4444] self-end">:</span>
+              <div className="">
+                <div className="text-sm">hour</div>
+                <div className="text-2xl font-bold">23</div>
+              </div>
+              <span className="text-[#DB4444] self-end">:</span>
+              <div className="">
+                <div className="text-sm">minutes</div>
+                <div className="text-2xl font-bold">19</div>
+              </div>
+              <span className="text-[#DB4444] self-end">:</span>
+              <div className="">
+                <div className="text-sm">secound</div>
+                <div className="text-2xl font-bold">56</div>
+              </div>
             </div>
-            <span className="text-[#DB4444] self-end">:</span>
-            <div className="">
-              <div className="text-sm">hour</div>
-              <div className="text-2xl font-bold">23</div>
-            </div>
-            <span className="text-[#DB4444] self-end">:</span>
-            <div className="">
-              <div className="text-sm">minutes</div>
-              <div className="text-2xl font-bold">19</div>
-            </div>
-            <span className="text-[#DB4444] self-end">:</span>
-            <div className="">
-              <div className="text-sm">secound</div>
-              <div className="text-2xl font-bold">56</div>
-            </div>
-
-            </div>
-          
           </div>
         </div>
         <div className="flex  gap-5">
@@ -50,10 +49,14 @@ export default function Flashsales() {
         </div>
       </div>
 
-      <div className=" flex gap-2 my-2">
+      <div className=" flex gap-2 my-2 ">
         {cardlist.map((data, i) => {
           return <Card item={data} index={i + "card"} />;
         })}
+      </div>
+      <Button>View All Products</Button>
+      <div className="w-full mx-auto my-4 border-gray-200 border-1 rounded-sm md:my-10 ">
+        {/* <hr /> */}
       </div>
     </div>
   );
