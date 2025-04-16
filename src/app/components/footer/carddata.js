@@ -1,7 +1,7 @@
-import chairImage from "../../../../public/assets/images/mainpage/chair.png";
-import gamepad from "../../../../public/assets/images/mainpage/Gamepad-Cart-Small.png";
-import keyboard from "../../../../public/assets/images/mainpage/Keyboard-Cart-Small.png";
-import Monitor from "../../../../public/assets/images/mainpage/Monitor-Cart-Small.png";
+// import chairImage from "../../../../public/assets/images/mainpage/chair.png";
+// import gamepad from "../../../../public/assets/images/mainpage/Gamepad-Cart-Small.png";
+// import keyboard from "../../../../public/assets/images/mainpage/Keyboard-Cart-Small.png";
+// import Monitor from "../../../../public/assets/images/mainpage/Monitor-Cart-Small.png";
 
 export const Support = [
   {
