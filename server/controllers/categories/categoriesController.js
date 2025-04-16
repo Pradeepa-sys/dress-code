@@ -1,4 +1,6 @@
-import CategoryModel from "../../models/categories/categories"
+import chalk from "chalk"
+import { upload } from "../../config/multer.js"
+import CategoryModel from "../../models/categories/categories.js"
 
 
 
@@ -12,9 +14,7 @@ export const allCategory = async(req,res) => {
         }
         res.json({
             status:true,
-            categoriesList:{
-                category:category
-            }
+            categoriesList:category
         })
     } catch (error) {
         return res.status(500).json({
@@ -23,18 +23,20 @@ export const allCategory = async(req,res) => {
     }
 }
 
-export const addCategory = [
-    (req, res, next) => {
-      req.folderType = "category"; // so image uploads to `category_images` folder in Cloudinary
-      next();
-    },
+export const addCategory = 
+[
+  (req, res, next) => {
+    req.folderType = "category"; // Image uploads to category_images folder
+    next();
+   
+  },
+    [upload.single("categoryImage")],
     async (req, res) => {
-      const { categoryName } = req.body;
-  
       try {
-        const catImage = req.file ? req.file.path : null;
-  
-        if (!catImage) {
+        const { categoryName } = req.body;
+        const categoryImage = req.file ? req.file.path : null;
+
+        if (!categoryImage) {
           return res.status(400).json({
             success: false,
             message: "Image not provided",
@@ -43,7 +45,7 @@ export const addCategory = [
   
         const newCategory = new CategoryModel({
           categoryName,
-          categoryImage: catImage,
+          categoryImage,
         });
   
         await newCategory.save();
@@ -54,12 +56,13 @@ export const addCategory = [
           data: newCategory,
         });
       } catch (error) {
-        console.error(error);
+        console.error("Error saving category:", error);
         res.status(500).json({
           success: false,
           message: "Internal Server Error",
         });
       }
-    },
+    }
   ];
+  
   
