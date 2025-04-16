@@ -275,6 +275,7 @@ export const product2 = [
     rate: "$960",
     rating: 75,
     latest:"new",
+    ratingCount: "(26)",
     imageUrl: "assets/images/Products/Car.svg",
    
   },
@@ -282,6 +283,7 @@ export const product2 = [
     name: "Jr.Zoom Soccer Cleats",
     rate: "$1160",
     rating: 2.5,
+    ratingCount: "(26)",
     imageUrl: "/assets/images/Products/shoe.svg",
    
   },

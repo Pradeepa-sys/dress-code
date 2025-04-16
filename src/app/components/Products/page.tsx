@@ -4,6 +4,7 @@ import right from "../../../../public/assets/icon/rightarrow.png";
 import Card from "../Products/Card";
 import { cardlist, month, product1, product2 } from "../footer/carddata";
 import { Splide, SplideTrack, SplideSlide } from "@splidejs/react-splide";
+import Button from "../../components/Button";
 
 export default function Bestselling() {
   return (
@@ -31,7 +32,7 @@ export default function Bestselling() {
             {product1?.map((e, i) => {
               return (
                 <SplideSlide key={i}>
-                  <Card item={e} key={i}  />
+                  <Card item={e} key={i} />
                 </SplideSlide>
               );
             })}
@@ -40,7 +41,7 @@ export default function Bestselling() {
             {product2?.map((e, i) => {
               return (
                 <SplideSlide key={i}>
-                  <Card item={e} key={i}  />
+                  <Card item={e} key={i} />
                 </SplideSlide>
               );
             })}
@@ -54,6 +55,9 @@ export default function Bestselling() {
             </button>
           </div>
         </Splide>
+      </div>
+      <div className="flex items-center justify-center">
+        <Button className="bg-red-600 ">View All Products</Button>
       </div>
     </div>
   );
