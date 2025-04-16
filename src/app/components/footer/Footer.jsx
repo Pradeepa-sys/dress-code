@@ -12,7 +12,7 @@ import linkedin from "../../../../public/assets/icon/Icon-Linkedin.svg";
 
 export default function Footer() {
   return (
-    <div className=" flex gap-7 items-start p-4 bg-neutral-900 h-[300px] justify-evenly">
+    <div className=" flex gap-7 items-start p-4 bg-neutral-900 h-[380px] justify-evenly">
       <div>
         <h1 className="h-10 text-xl">Exclusive</h1>
         <div className="py-1">
