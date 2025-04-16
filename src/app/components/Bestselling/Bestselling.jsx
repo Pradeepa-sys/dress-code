@@ -14,7 +14,7 @@ export default function Bestselling() {
         <h1 className="text-black text-3xl font-medium">
           Best Selling Products{" "}
         </h1>
-        <Button className="mt-0">View All </Button>
+        <Button className="mt-0 bg-red-600">View All </Button>
       </div>
 
       <div className=" flex gap-2 my-2 ">

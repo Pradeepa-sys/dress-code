@@ -10,6 +10,7 @@ import SideMenu from "./components/SideMenu/page.jsx";
 import Flashsales from "./components/Flashsales/Flashsales.jsx";
 import Category from "./components/Categories/Category.jsx";
 import Bestselling from "./components/Bestselling/Bestselling.jsx";
+import Banners from "./components/Banners/Banners.jsx"
 
 export default function Home() {
   return (
@@ -57,6 +58,7 @@ export default function Home() {
       <Flashsales />
       <Category/>
       <Bestselling/>
+      <Banners/>
     </div>
   );
 }

@@ -80,7 +80,7 @@ export default function Flashsales() {
         </div>
 
 
-        <Button>View All Products</Button>
+        <Button className="bg-red-600">View All Products</Button>
         <div className="w-full mx-auto my-4 border-gray-200 border-1 rounded-sm md:my-10 ">
           {/* <hr /> */}
         </div>
