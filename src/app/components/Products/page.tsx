@@ -6,7 +6,24 @@ import { cardlist, month, product1, product2 } from "../footer/carddata";
 import { Splide, SplideTrack, SplideSlide } from "@splidejs/react-splide";
 import Button from "../../components/Button";
 
+
+const chunkArray = (arr:any, size:any) => {
+    const result = [];
+    for (let i = 0; i < arr.length; i += size) {
+      result.push(arr.slice(i, i + size));
+    }
+    return result;
+  };
+
+
+const combinedProducts = [...(product1 || []), ...(product2 || [])];
+const slidesInChunks = chunkArray(combinedProducts, 2
+    
+);
 export default function Bestselling() {
+
+    
+
   return (
     <div className="px-40">
       <div className="flex py-5 self-start">
@@ -18,34 +35,31 @@ export default function Bestselling() {
           Explore Our Products
         </h1>
       </div>
-      <div className="w-[1600px] flex gap-2 my-2 ">
+      <div className=" flex gap-2 my-2 ">
         <Splide
           hasTrack={false}
           aria-label="..."
-          className=" flex gap-10  my-2 flex-col"
+          className=" flex gap-10  my-2 flex-col w-[1600px]"
           options={{
             arrows: true,
             perPage: 4,
           }}
         >
           <SplideTrack>
-            {product1?.map((e, i) => {
+            {slidesInChunks?.map((group, i) => {
+                console.log("group",group)
               return (
                 <SplideSlide key={i}>
-                  <Card item={e} key={i} />
+                  <div className="flex flex-col gap-4">
+                    {group?.map((item: any, idx: number) => (
+                      <Card key={idx} item={item} />
+                    ))}
+                  </div>
                 </SplideSlide>
               );
             })}
           </SplideTrack>
-          <SplideTrack>
-            {product2?.map((e, i) => {
-              return (
-                <SplideSlide key={i}>
-                  <Card item={e} key={i} />
-                </SplideSlide>
-              );
-            })}
-          </SplideTrack>
+
           <div className="splide__arrows  absolute -top-10  right-0 ">
             <button className=" splide__arrow splide__arrow--prev !bg-gray-300 w-10 h-10 p-2">
               <Image src={left} alt="" />
@@ -57,7 +71,9 @@ export default function Bestselling() {
         </Splide>
       </div>
       <div className="flex items-center justify-center">
-        <Button className="bg-red-600 ">View All Products</Button>
+        <Button type="" onClick={""} className="bg-red-600 ">
+          View All Products
+        </Button>
       </div>
     </div>
   );

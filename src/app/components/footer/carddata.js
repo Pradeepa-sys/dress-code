@@ -232,6 +232,7 @@ export const month = [
 ];
 
 export const product1 = [
+  
   {
     name: "Breed Dry Dog Food",
     rate: "$100",
@@ -267,6 +268,22 @@ export const product1 = [
     imageUrl: "/assets/images/Products/ipad.svg",
     
   }, 
+  {
+    name: "Breed Dry Dog Food",
+    rate: "$100",
+    rating: 75,
+    ratingCount: "(35)",
+    imageUrl: "assets/images/Products/dogfood.svg",
+   
+  },
+  {
+    name: "CANON EOS DSLR Camera",
+    rate: "$360",
+    ratingCount: "(95)",
+    rating: 2.5,
+    imageUrl: "/assets/images/Products/camera.svg",
+   
+  },
 ];
 
 export const product2 = [
@@ -305,4 +322,21 @@ export const product2 = [
     imageUrl: "/assets/images/Products/coat.svg",
     
   }, 
+  {
+    name: "Kids Electric Car",
+    rate: "$960",
+    rating: 75,
+    latest:"new",
+    ratingCount: "(26)",
+    imageUrl: "assets/images/Products/Car.svg",
+   
+  },
+  {
+    name: "Jr.Zoom Soccer Cleats",
+    rate: "$1160",
+    rating: 2.5,
+    ratingCount: "(26)",
+    imageUrl: "/assets/images/Products/shoe.svg",
+   
+  },
 ];
