@@ -54,10 +54,6 @@ const userSchema = new mongoose.Schema({
         type: Boolean,
         default: false
     },
-    products: [{
-         type: mongoose.Schema.Types.ObjectId,
-        ref: "product"
-    }],
     cart: [{
         product: {
              type: mongoose.Schema.Types.ObjectId,
