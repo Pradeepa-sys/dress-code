@@ -4,11 +4,10 @@ import left from "../../../../public/assets/icon/leftarrow.png";
 import Card from "../../components/Flashsales/Card.jsx";
 import Button from "../../components/Button.jsx";
 import { cardlist } from "../footer/carddata";
-import { Splide, SplideTrack,SplideSlide } from "@splidejs/react-splide";
- 
-export default function Flashsales() {
+import { Splide, SplideTrack, SplideSlide } from "@splidejs/react-splide";
 
-  console.log("cardlist",cardlist)
+export default function Flashsales() {
+  console.log("cardlist", cardlist);
 
   return (
     <div className="">
@@ -44,49 +43,44 @@ export default function Flashsales() {
               </div>
             </div>
           </div>
-         
         </div>
 
         <div className=" flex gap-2 my-2 ">
-        
-        <Splide
-        hasTrack={false}
-        aria-label="..."
-        className="w-[1600px] flex gap-10  my-2"
-        options={{
-          arrows: true,
-          perPage: 4,
-        }}
-      >
-        <SplideTrack>
-          {cardlist?.map((e, i) => {
-            return (
-              <SplideSlide key={i}>
-                <Card item={e} key={i} />
-              </SplideSlide>
-            );
-          })}
-        </SplideTrack>
+          <Splide
+            hasTrack={false}
+            aria-label="..."
+            className="w-[1600px] flex gap-10  my-2"
+            options={{
+              arrows: true,
+              perPage: 4,
+            }}
+          >
+            <SplideTrack>
+              {cardlist?.map((e, i) => {
+                return (
+                  <SplideSlide key={i}>
+                    <Card item={e} key={i} />
+                  </SplideSlide>
+                );
+              })}
+            </SplideTrack>
 
-        <div className="splide__arrows  absolute -top-10  right-0 ">
-          <button className=" splide__arrow splide__arrow--prev !bg-gray-300 w-10 h-10 p-2">
-          <Image src={left} />
-          </button>
-          <button className="splide__arrow splide__arrow--next !bg-gray-300">
-          <Image src={right} />
-          </button>
+            <div className="splide__arrows  absolute -top-10  right-0 ">
+              <button className=" splide__arrow splide__arrow--prev !bg-gray-300 w-10 h-10 p-2">
+                <Image src={left} />
+              </button>
+              <button className="splide__arrow splide__arrow--next !bg-gray-300">
+                <Image src={right} />
+              </button>
+            </div>
+          </Splide>
         </div>
-      </Splide>
-        </div>
-
 
         <Button className="bg-red-600">View All Products</Button>
         <div className="w-full mx-auto my-4 border-gray-200 border-1 rounded-sm md:my-10 ">
           {/* <hr /> */}
         </div>
       </div>
-
-   
     </div>
   );
 }

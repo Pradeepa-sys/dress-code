@@ -11,6 +11,7 @@ import Flashsales from "./components/Flashsales/Flashsales.jsx";
 import Category from "./components/Categories/Category.jsx";
 import Bestselling from "./components/Bestselling/Bestselling.jsx";
 import Banners from "./components/Banners/Banners.jsx"
+import Products from "./components/Products/page";
 
 export default function Home() {
   return (
@@ -59,6 +60,7 @@ export default function Home() {
       <Category/>
       <Bestselling/>
       <Banners/>
+      <Products/>
     </div>
   );
 }

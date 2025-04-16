@@ -8,7 +8,7 @@ export default function Banners() {
       <div className="h-[575px] bg-black ">
         <div className="flex gap-15  ">
           <div className="mx-30 my-20 line-clamp-5  flex flex-col space-y-7 ">
-            <p className="text-green-600 ">Categories</p>
+            <p className="text-green-400 ">Categories</p>
             <h2 className="text-6xl">Enhance Your</h2>
             <h2 className="text-6xl">Music Exprience</h2>
             <div className="flex gap-8">
@@ -31,7 +31,7 @@ export default function Banners() {
             </div>
             <Button className="bg-green-500  p-15px w-[130px]">Buy Now</Button>
           </div>
-          <div className=" hadow-[rgba(0,0,0,0.5)_34px_3px_9px_0px] 
+          <div className=" shadow-[rgba(0,0,0,0.5)_34px_3px_9px_0px] 
   shadow_clor:rgb(20 20 20) ">
             <Image src={banner2} className="h-[90%] w-[100%] m-auto  " />
           </div>

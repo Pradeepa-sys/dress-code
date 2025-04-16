@@ -230,3 +230,77 @@ export const month = [
     
   },
 ];
+
+export const product1 = [
+  {
+    name: "Breed Dry Dog Food",
+    rate: "$100",
+    rating: 75,
+    ratingCount: "(35)",
+    imageUrl: "assets/images/Products/dogfood.svg",
+   
+  },
+  {
+    name: "CANON EOS DSLR Camera",
+    rate: "$360",
+    ratingCount: "(95)",
+    rating: 2.5,
+    imageUrl: "/assets/images/Products/camera.svg",
+   
+  },
+  {
+    name: "ASUS FHD Gaming Laptop",
+    rate: "$375",
+  
+    ratingCount: "(26)",
+    rating: 5,
+    imageUrl: "/assets/images/Products/GP.svg",
+    
+  },
+
+  {
+    name: "Curology Product Set",
+    rate: "$500",
+    op: "$400",
+    ratingCount: "(145)",
+    rating: 90,
+    imageUrl: "/assets/images/Products/ipad.svg",
+    
+  }, 
+];
+
+export const product2 = [
+  {
+    name: "Kids Electric Car",
+    rate: "$960",
+    rating: 75,
+    latest:"new",
+    imageUrl: "assets/images/Products/Car.svg",
+   
+  },
+  {
+    name: "Jr.Zoom Soccer Cleats",
+    rate: "$1160",
+    rating: 2.5,
+    imageUrl: "/assets/images/Products/shoe.svg",
+   
+  },
+  {
+    name: "GP11 Shooter USB Gamepad",
+    rate: "$660",
+    latest:"new",
+    ratingCount: "(26)",
+    rating: 5,
+    imageUrl: "/assets/images/Products/GP.svg",
+    
+  },
+
+  {
+    name: "Quilted Satin Jacket",
+    rate: "$660",
+    ratingCount: "(145)",
+    rating: 90,
+    imageUrl: "/assets/images/Products/coat.svg",
+    
+  }, 
+];
