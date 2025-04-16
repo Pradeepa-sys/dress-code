@@ -10,7 +10,9 @@ import SideMenu from "./components/SideMenu/page.jsx";
 import Flashsales from "./components/Flashsales/Flashsales.jsx";
 import Category from "./components/Categories/Category.jsx";
 import Bestselling from "./components/Bestselling/Bestselling.jsx";
-import Banners from "./components/Banners/Banners.jsx"
+import Banners from "./components/Banners/Banners.jsx";
+import Products from "./components/Products/page";
+import Features from "../app/components/Features/Features.jsx";
 
 export default function Home() {
   return (
@@ -27,7 +29,7 @@ export default function Home() {
             aria-label="My Favorite Images"
             options={{
               // type: 'loop',
-              rewind:true,
+              rewind: true,
               // autoplay: false,
               // perMove: 1,
               // pagination: true,
@@ -40,7 +42,7 @@ export default function Home() {
             }}
             // extensions={{ AutoScroll}}
           >
-            {[1, 2, 3].map((e,i) => {
+            {[1, 2, 3].map((e, i) => {
               return (
                 <SplideSlide key={i}>
                   <Image
@@ -56,9 +58,11 @@ export default function Home() {
         </div>
       </div>
       <Flashsales />
-      <Category/>
-      <Bestselling/>
-      <Banners/>
+      <Category />
+      <Bestselling />
+      <Banners />
+      <Products />
+      <Features />
     </div>
   );
 }
