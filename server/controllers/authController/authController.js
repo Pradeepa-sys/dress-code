@@ -1,19 +1,22 @@
 import bcrypt from 'bcryptjs';
 import userModel from "../../models/auth/register.js";
 import jwt from 'jsonwebtoken';
+import { validationResult } from 'express-validator';
 
 
 
 
 export const SignUp = async (req, res) => {
-    const { userName, email, mobileNumber, password } = req.body;
 
-    if (!userName || !password || (!email && !mobileNumber)) {
+
+    const errors = validationResult(req);
+    if(!errors.isEmpty()){
         return res.status(400).json({
-            success: false,
-            message: "Name, password, and either email or mobile number are required."
+            success:false,
+            errors:errors.array()
         });
     }
+    const { userName, email, mobileNumber, password } = req.body;
 
     try {
         // Build query only with defined fields
@@ -65,23 +68,19 @@ export const SignUp = async (req, res) => {
 
 
 export const login = async (req,res) =>{
-    // const errors = validationResult(req);
 
-    // if(!errors.isEmpty()){
-    //     return res.status(400).json({
-    //         success:false,
-    //         errors:errors.array()
-    //     })
-    // }
+    const errors = validationResult(req);
+
+    if(!errors.isEmpty()){
+        return res.status(400).json({
+            success:false,
+            errors:errors.array()
+        })
+    }
 
     const {email,password,mobileNumber} = req.body;
     
-    if (!password || (!email && !mobileNumber)) {
-        return res.status(400).json({
-            success: false,
-            message: "Password and either email or mobile number are required."
-        });
-    }
+  
     try {
         let user = null ; 
         if(email){
@@ -96,6 +95,16 @@ export const login = async (req,res) =>{
                 message:"Invalid User"
             })
         }
+
+
+
+        if (!user) {
+            return res.status(404).json({
+                status: false,
+                message: "User not found"
+            });
+        }
+
         
         const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, {
             expiresIn: "7d"
