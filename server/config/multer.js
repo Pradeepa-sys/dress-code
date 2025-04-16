@@ -5,8 +5,10 @@ import cloudinary from "./cloudinary.js";
 const storage = new CloudinaryStorage({
   cloudinary,
   params: (req, file) => {
+    const folderType = req.folderType || "misc";
+    // console.log("folderType",folderType)
     return {
-      folder:  "product_images",
+      folder: folderType === "category" ? "category_image" : "product_image",
       // allowed_formats: ["jpg", "png", "jpeg", "webp", "svg"],
       public_id: `${Date.now()}-${file.originalname}`,
       resource_type: "auto",

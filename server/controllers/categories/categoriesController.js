@@ -25,7 +25,11 @@ export const allCategory = async(req,res) => {
 
 export const addCategory = 
 [
-  
+  (req, res, next) => {
+    req.folderType = "category"; // Image uploads to category_images folder
+    next();
+   
+  },
     [upload.single("categoryImage")],
     async (req, res) => {
       try {
