@@ -11,7 +11,7 @@ export default function Card({ item, index }) {
       key={index}
       className="m-6  bg-gray-100 w-auto relative rounded-lg group "
     >
-      <div className="bg-gray-100 w-auto h-[220px]">
+      <div className="bg-gray-100 w-auto h-[220px] ">
        
         <img src={item.imageUrl} alt="Item image" className="h-[150px] w-[300px] object-contain p-2 flex item-center " />
 

@@ -31,7 +31,7 @@ export default function Features() {
         >
           <div className="space-y-2 absolute bottom-0 m-10">
             <p className="text-white text-2xl ">PlayStation 5</p>
-            <p className="text-md">
+            <p className="text-sm">
               Black and White Version of the ps5 <br />
               coming out on sale
             </p>
@@ -52,7 +52,7 @@ export default function Features() {
           >
             <div className="space-y-2 absolute bottom-0 m-10">
               <p className="text-white text-2xl ">Women's Collections</p>
-              <p className="text-md">
+              <p className="textsm">
                 Featured Women collections that
                 <br /> give you another vibe
               </p>
@@ -72,7 +72,7 @@ export default function Features() {
             >
               <div className="space-y-2 absolute bottom-0 m-10">
                 <p className="text-white text-2xl ">Speakers</p>
-                <p className="text-md">Amazon Wireless Speakers</p>
+                <p className="text-sm">Amazon Wireless Speakers</p>
                 <p className="underline">shop now</p>
               </div>
             </div>
@@ -88,7 +88,7 @@ export default function Features() {
             >
               <div className="space-y-2 absolute bottom-0 m-10">
                 <p className="text-white text-2xl ">Perfume</p>
-                <p className="text-md ">GUCCI INTENSEOUD EDP</p>
+                <p className="text-sm ">GUCCI INTENSEOUD EDP</p>
                 <p className="underline">shop now</p>
               </div>
             </div>
