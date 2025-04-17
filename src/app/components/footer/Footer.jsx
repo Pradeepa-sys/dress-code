@@ -12,45 +12,47 @@ import linkedin from "../../../../public/assets/icon/Icon-Linkedin.svg";
 
 export default function Footer() {
   return (
-    <div className=" flex gap-7 items-start p-4 bg-neutral-900 h-[380px] justify-evenly">
-      <div>
-        <h1 className="h-10 text-xl">Exclusive</h1>
-        <div className="py-1">
-        <h3 className="py-3">Subscribe</h3>
-        <p className="py-3">Get 10% off your first order</p>
-        <div className=" flex h-12 w-65 py-0 item-center  border border-gray-50 rounded-lg  ">
-          <input
-            type="text"
-            className="outline-0 w-55 px-3 "
-            placeholder="Enter your email"
-          />
-          <div className="py-3 px-2 ">
-            <Image src={send} width={25} alt="Picture of the author" />
+    <div className="flex flex-col lg:flex-row flex-wrap gap-7 items-start p-4 bg-neutral-900 justify-between lg:justify-evenly h-auto lg:h-[380px]">
+      <div className="w-full sm:w-1/2 lg:w-auto mb-4 lg:mb-0">
+        <h1 className="h-10 text-xl text-white">Exclusive</h1>
+        <div className="py-1 text-white">
+          <h3 className="py-3">Subscribe</h3>
+          <p className="py-3 text-sm text-gray-300">Get 10% off your first order</p>
+          <div className="flex items-center h-12 w-[80%] border border-gray-50 rounded-lg overflow-hidden">
+            <input
+              type="text"
+              className="outline-none px-3 md:w-[90%]  w-full bg-transparent text-white"
+              placeholder="Enter your email"
+            />
+            <div className="px-3">
+              <Image src={send} width={25} alt="Send Icon" />
+            </div>
           </div>
-        </div>
-        
         </div>
       </div>
+
       <Footercard data={Support} title="Support" />
       <Footercard data={Account} title="Account" />
-      <Footercard data={QickLink} title="Quick Link"/>
-      <div className="flex flex-col items-center justify-center ">
+      <Footercard data={QickLink} title="Quick Link" />
+
+      <div className="w-full sm:w-1/2 lg:w-auto flex flex-col items-start lg:items-center justify-center text-white mt-4 lg:mt-0">
         <h1 className="h-10 text-xl">Download App</h1>
-        <p className="text-gray-500">Save $3 with App New User Only</p>
-        <div className="flex py-5 ">
-          <Image src={Qrcode} width={75} alt="Picture of the author" />
-          <div className="flex flex-col py-6">
-            <Image src={gpay} width={100} alt="Picture of the author" />
-            <Image src={app} width={100} alt="Picture of the author" />
+        <p className="text-gray-400 text-sm">Save $3 with App New User Only</p>
+        <div className="flex flex-col sm:flex-row py-5 gap-4">
+          <Image src={Qrcode} width={75} alt="QR Code" />
+          <div className="flex flex-col justify-center gap-2">
+            <Image src={gpay} width={100} alt="Google Play" />
+            <Image src={app} width={100} alt="App Store" />
           </div>
         </div>
-        <div className="flex gap-4 ">
-          <Image src={facebook} width={30} alt="Picture of the author" />
-          <Image src={instagram} width={30} alt="Picture of the author" />
-          <Image src={twitter} width={30} alt="Picture of the author" />
-          <Image src={linkedin} width={30} alt="Picture of the author" />
+        <div className="flex gap-4 mt-2">
+          <Image src={facebook} width={30} alt="Facebook" />
+          <Image src={instagram} width={30} alt="Instagram" />
+          <Image src={twitter} width={30} alt="Twitter" />
+          <Image src={linkedin} width={30} alt="LinkedIn" />
         </div>
       </div>
     </div>
   );
 }
+
