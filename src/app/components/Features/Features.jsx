@@ -18,14 +18,14 @@ export default function Features() {
         <h1 className="text-black text-3xl font-medium">New Arrival</h1>
       </div>
 
-      <div className="flex h-[150%] gap-9 ">
+      <div className="flex  gap-9 mt-10">
         <div
           style={{
             backgroundImage: `url(${left.src})`,
             backgroundSize: "cover",
             height: "650px",
             width: "650px",
-            marginBlock: "40px",
+          
             position: "relative",
           }}
         >
@@ -39,14 +39,14 @@ export default function Features() {
           </div>
         </div>
 
-        <div>
+        <div className="flex flex-col gap-12">
           <div
             style={{
               backgroundImage: `url(${right.src})`,
               backgroundSize: "cover",
               height: "300px",
               width: "650px",
-              marginBlock: "35px",
+              
               position: "relative",
             }}
           >
@@ -59,14 +59,14 @@ export default function Features() {
               <p className="underline">shop now</p>
             </div>
           </div>
-          <div className="flex gap-10">
+          <div className="flex justify-between">
             <div
               style={{
                 backgroundImage: `url(${bottom1.src})`,
                 backgroundSize: "cover",
                 height: "300px",
                 width: "300px",
-                marginBlock: "20px",
+                
                 position: "relative",
               }}
             >
@@ -82,7 +82,7 @@ export default function Features() {
                 backgroundSize: "cover",
                 height: "300px",
                 width: "300px",
-                marginBlock: "20px",
+              
                 position: "relative",
               }}
             >

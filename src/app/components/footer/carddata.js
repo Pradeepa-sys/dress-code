@@ -179,6 +179,26 @@ export const categories = [
     imageUrl: "assets/icon/Category-SmartWatch.svg",
     name: "SmartWatch",
   },
+  {
+    imageUrl: "assets/icon/Category-CellPhone.svg",
+    name: "Phones",
+  },
+  {
+    imageUrl: "assets/icon/Category-Computer.svg",
+    name: "Computers",
+  },
+  {
+    imageUrl: "assets/icon/Category-Gamepad.svg",
+    name: "Gaming",
+  },
+  {
+    imageUrl: "assets/icon/Category-Headphone.svg",
+    name: "Headphones",
+  },
+  {
+    imageUrl: "assets/icon/Category-SmartWatch.svg",
+    name: "SmartWatch",
+  },
 ];
 
 

@@ -9,17 +9,7 @@ export default function Card({ item }) {
   return (
     <div className="m-6  bg-gray-100 w-auto relative rounded-lg group ">
       <div className="bg-gray-100 w-auto h-[220px]  ">
-        <div
-          className="h-[150px] w-[300px] "
-          style={{
-            backgroundImage: `url(${item.imageUrl})`,
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "contain",
-            backgroundPosition: "center",
-          }}
-        >
-          <div className="absolute top-2 right-2"></div>
-        </div>
+      <img src={item.imageUrl} alt="Item image" className="h-[150px] w-[300px] object-contain p-2 flex item-center " />
         <div className="relative ">
           <button className="text-white bg-black absolute top-6 text-lg w-full p-2 rounded-b-lg hidden  group-hover:inline">
             Add to Cart
