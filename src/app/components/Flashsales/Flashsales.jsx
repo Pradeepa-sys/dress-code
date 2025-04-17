@@ -67,10 +67,10 @@ export default function Flashsales() {
 
             <div className="splide__arrows  absolute -top-10  right-0 ">
               <button className=" splide__arrow splide__arrow--prev !bg-gray-300 w-10 h-10 p-2">
-                <Image src={left} />
+                <Image src={right} />
               </button>
               <button className="splide__arrow splide__arrow--next !bg-gray-300">
-                <Image src={right} />
+                <Image src={left} />
               </button>
             </div>
           </Splide>

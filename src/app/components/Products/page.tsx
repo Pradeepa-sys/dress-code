@@ -62,10 +62,10 @@ export default function Bestselling() {
 
           <div className="splide__arrows  absolute -top-10  right-0 ">
             <button className=" splide__arrow splide__arrow--prev !bg-gray-300 w-10 h-10 p-2">
-              <Image src={left} alt="" />
+              <Image src={right} alt="" />
             </button>
             <button className="splide__arrow splide__arrow--next !bg-gray-300">
-              <Image src={right} alt="" />
+              <Image src={left} alt="" />
             </button>
           </div>
         </Splide>
