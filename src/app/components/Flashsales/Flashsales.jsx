@@ -7,11 +7,9 @@ import { cardlist } from "../footer/carddata";
 import { Splide, SplideTrack, SplideSlide } from "@splidejs/react-splide";
 
 export default function Flashsales() {
-  console.log("cardlist", cardlist);
-
   return (
     <div className="">
-      <div className="flex justify-center items-center flex-col px-40 ">
+      <div className="flex justify-center items-center flex-col px-40">
         <div className="flex py-5 self-start">
           <p className="h-8 w-4 bg-red-600 border rounded-sm"></p>
           <p className="pl-3 pt-1 text-red-600"> Today's</p>

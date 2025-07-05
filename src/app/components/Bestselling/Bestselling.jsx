@@ -17,7 +17,7 @@ export default function Bestselling() {
         <Button className="mt-0 bg-red-600">View All </Button>
       </div>
 
-      <div className=" flex gap-2 my-2 ">
+      <div className="">
         <Splide
           hasTrack={false}
           aria-label="..."

@@ -20,7 +20,6 @@ export default function Card({ item, index }) {
             Add to Cart
           </button>
         </div>
-
         <div className="space-y-3 absolute top-2 right-2">
           <div className=" p-1 bg-white rounded-full">
             <Image src={eye} alt="" className="  " />

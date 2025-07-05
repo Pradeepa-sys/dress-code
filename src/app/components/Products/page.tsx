@@ -21,9 +21,6 @@ const slidesInChunks = chunkArray(combinedProducts, 2
     
 );
 export default function Bestselling() {
-
-    
-
   return (
     <div className="px-40">
       <div className="flex py-5 self-start">
@@ -47,7 +44,7 @@ export default function Bestselling() {
         >
           <SplideTrack>
             {slidesInChunks?.map((group, i) => {
-                console.log("group",group)
+              
               return (
                 <SplideSlide key={i}>
                   <div className="flex flex-col gap-4">

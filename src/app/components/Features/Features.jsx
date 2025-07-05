@@ -17,7 +17,6 @@ export default function Features() {
       <div>
         <h1 className="text-black text-3xl font-medium">New Arrival</h1>
       </div>
-
       <div className="flex  gap-9 mt-10">
         <div
           style={{
@@ -88,7 +87,7 @@ export default function Features() {
             >
               <div className="space-y-2 absolute bottom-0 m-10">
                 <p className="text-white text-2xl ">Perfume</p>
-                <p className="text-sm ">GUCCI INTENSEOUD EDP</p>
+                <p className="text-sm">GUCCI INTENSEOUD EDP</p>
                 <p className="underline">shop now</p>
               </div>
             </div>

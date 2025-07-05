@@ -17,9 +17,9 @@ import Features from "../app/components/Features/Features.jsx";
 export default function Home() {
   return (
     <div className=" bg-white">
-      <div className="flex px-40 gap-20 ">
-        <div className="w-[18%] py-10  border-gray-300 border-r-1 border-0">
-          <SideMenu data={Sidemenu} />
+      <div className="flex px-40 gap-20 md:px-20 md:gap-10">
+        <div className="w-[18%] py-3  border-gray-300 border-r-1 border-0 md:py-10">
+          <SideMenu data={Sidemenu}/>
         </div>
         <div>
           <p className="border-gray-300 border  border-r-2 "></p>
@@ -49,7 +49,7 @@ export default function Home() {
                     //key={e}
                     src={Banner}
                     alt="Picture of the author"
-                    className="h-[99%] w-full"
+                    className="h-[85%]  w-full md:w-full"
                   />
                 </SplideSlide>
               );
